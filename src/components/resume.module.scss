@@ -1,0 +1,22 @@
+.timeline {
+    margin-top: 24px;
+}
+
+.item {
+    margin-bottom: 16px;
+    h4 {
+        margin-bottom: 0px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease;
+    }
+    a:hover {
+        color: #e2e2e2;
+    }
+}
+
+.timespan {
+    font-size: 10px;
+}
