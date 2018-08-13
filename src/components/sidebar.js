@@ -20,6 +20,7 @@ const Sidebar = styled.div`
   left: 0;
   height: 100%;
   padding: 35px;
+  padding-bottom: 60px;
   position: fixed;
   top: 0;
   width: 40%;
@@ -27,9 +28,15 @@ const Sidebar = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 24px;
+    padding-bottom: 60px;
     position: relative;
     width: 100%;
     height: 100vh;
+  }
+
+    @supports (-webkit-overflow-scrolling: touch) {
+    /* CSS specific to iOS devices */ 
+    height: calc(100% - 40px);
   }
 `
 

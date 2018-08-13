@@ -19,6 +19,7 @@ const Summary = styled.div`
 `
 
 const Links = styled.div`
+  margin-bottom: 24px;
   width: 50%;
   ul {
     list-style-type: none;
