@@ -7,7 +7,7 @@ import Tag from '../buttons/tag';
 const Fortnite = ({ image }) => {
   return (
     <div>
-      <h5>/SHOWCASE/008</h5>
+      <h5>/SHOWCASE/007</h5>
       <ShowcaseImage>
         <Img
           title="Fortnite Map Screenshot"

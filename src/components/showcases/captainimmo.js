@@ -17,7 +17,7 @@ const CaptainImmo = ({ image }) => {
       </ShowcaseImage>
       <ShowcaseCaption>
         <h2>Captain Immo</h2>
-        <Tag color='#fa8c16'>iOS</Tag>
+        <Tag color='#fa8c16'>Web</Tag>
         <Tag color='#fa8c16'>UI</Tag>
         <Tag color='#fa8c16'>UX</Tag>
         <Tag color='#fa8c16'>Code</Tag>
