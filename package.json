@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-sharp": "^1.6.27",
     "moment": "^2.22.2",
+    "react-collapsible": "^2.2.0",
     "react-helmet": "^5.2.0",
     "react-media": "^1.8.0",
     "reactstrap": "^6.1.0",
