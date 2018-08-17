@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Link from 'gatsby-link';
+import React from 'react'
+import styled from 'styled-components'
+import Link from 'gatsby-link'
 
-import Button from '../components/buttons/button';
+import Button from '../components/buttons/button'
 
 const NotFound = styled.div`
   padding: 65px;
@@ -12,9 +12,9 @@ const NotFound = styled.div`
 
 export default () => (
   <NotFound>
-    <h2>404</h2>
-    <h4>You see 'nuffing, Jon Snow</h4>
-    <Link to='/'>
+    <h1>404</h1>
+    <h2>You see 'nuffing, Jon Snow</h2>
+    <Link to="/">
       <Button inverse={true}>back</Button>
     </Link>
   </NotFound>

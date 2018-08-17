@@ -1,17 +1,16 @@
-import React from 'react';
-import Media from 'react-media';
-import styled from 'styled-components';
+import React from 'react'
+import Media from 'react-media'
+import styled from 'styled-components'
 
-import Button from './buttons/button';
-import { ScrollContainer, ScrollDown } from './scroll';
-import signature from '../static/signature.svg';
-import LinkedIn from './social/linkedin';
-import Xing from './social/xing';
-import Github from './social/github';
-import Vimeo from './social/vimeo';
+import Button from './buttons/button'
+import { ScrollContainer, ScrollDown } from './scroll'
+import signature from '../static/signature.svg'
+import LinkedIn from './social/linkedin'
+import Xing from './social/xing'
+import Github from './social/github'
+import Vimeo from './social/vimeo'
 
 const Sidebar = styled.div`
-
   background-color: #fff;
   bottom: 0;
   display: flex;
@@ -34,20 +33,22 @@ const Sidebar = styled.div`
     height: 100vh;
   }
 
-    @supports (-webkit-overflow-scrolling: touch) {
-    /* CSS specific to iOS devices */ 
+  @supports (-webkit-overflow-scrolling: touch) {
+    /* CSS specific to iOS devices */
     height: calc(100% - 40px);
   }
 `
 
 const SidebarContent = styled.div`
-
   margin-bottom: 3rem;
   margin-left: 35px;
   width: 80%;
   color: #595959;
-  
-  h1, h2, h3, h6 {
+
+  h1,
+  h2,
+  h3,
+  h6 {
     color: #fa8c16;
     margin: 0;
     text-transform: uppercase;
@@ -95,34 +96,41 @@ const SocialContainer = styled.div`
 `
 
 export default () => {
-
   return (
     <Sidebar>
       <SidebarContent>
         <Signature>
           <img src={signature} />
         </Signature>
-        <h2>
-          Tech enthusiast,
-        </h2>
-        <h2>
-          startup affine,
-        </h2>
-        <h2>
-          great at googling
-        </h2>
+        <h1>Tech enthusiast,</h1>
+        <h1>startup affine,</h1>
+        <h1>great at googling</h1>
         <h6>(oh and I like fancy colors and video games)</h6>
         <SocialContainer>
-          <LinkedIn color='#0077b5' href='https://www.linkedin.com/in/timothyde' />
-          <Xing color='#026466' href='https://www.xing.com/profile/Timothy_Krechel/' />
-          <Github color='#c9510c' href='https://github.com/timothyde' />
-          <Vimeo color='#69b4e5' href='https://vimeo.com/user32649705' />
+          <LinkedIn
+            color="#0077b5"
+            href="https://www.linkedin.com/in/timothyde"
+          />
+          <Xing
+            color="#026466"
+            href="https://www.xing.com/profile/Timothy_Krechel/"
+          />
+          <Github color="#c9510c" href="https://github.com/timothyde" />
+          <Vimeo color="#69b4e5" href="https://vimeo.com/user32649705" />
         </SocialContainer>
         <Teaser>
-          I am a Student seeking my Master's Degree <TeaserLink target='_blank' href='https://www.h-brs.de/de'>@BRSU</TeaserLink> and
-          currently working as a Fullstack Developer <TeaserLink target='_blank' href='http://kartenhaus.io'>@Kartenhaus</TeaserLink>.
+          I am a Student seeking my Master's Degree{' '}
+          <TeaserLink target="_blank" href="https://www.h-brs.de/de">
+            @BRSU
+          </TeaserLink>{' '}
+          and currently working as a Fullstack Developer{' '}
+          <TeaserLink target="_blank" href="http://kartenhaus.io">
+            @Kartenhaus
+          </TeaserLink>.
         </Teaser>
-        <Button href="mailto:hello@timothy.de?subject=Hey%20mate%2C%20how's%20it%20going%3F">Say Hello!</Button>
+        <Button href="mailto:hello@timothy.de?subject=Hey%20mate%2C%20how's%20it%20going%3F">
+          Say Hello!
+        </Button>
         <Media query="(max-width: 768px)">
           {matches =>
             matches && (

@@ -1,8 +1,13 @@
-import React from 'react';
-import Img from 'gatsby-image';
+import React from 'react'
+import Img from 'gatsby-image'
 
-import { ShowcaseCaption, ShowcaseEmbed, ShowcaseImage, ShowcaseVideo } from '../showcase';
-import Tag from '../buttons/tag';
+import {
+  ShowcaseCaption,
+  ShowcaseEmbed,
+  ShowcaseImage,
+  ShowcaseVideo,
+} from '../showcase'
+import Tag from '../buttons/tag'
 
 const Fernrohr = ({ image }) => {
   return (
@@ -16,14 +21,14 @@ const Fernrohr = ({ image }) => {
         />
       </ShowcaseImage>
       <ShowcaseCaption>
-        <h2>Fernrohr</h2>
-        <Tag color='#fa8c16'>Web</Tag>
-        <Tag color='#fa8c16'>UI</Tag>
-        <Tag color='#fa8c16'>UX</Tag>
-        <Tag color='#fa8c16'>Code</Tag>
+        <h1>Fernrohr</h1>
+        <Tag color="#fa8c16">Web</Tag>
+        <Tag color="#fa8c16">UI</Tag>
+        <Tag color="#fa8c16">UX</Tag>
+        <Tag color="#fa8c16">Code</Tag>
       </ShowcaseCaption>
     </div>
-  );
-};
+  )
+}
 
-export default Fernrohr;
+export default Fernrohr
