@@ -7,7 +7,7 @@ networks:
     external: false
 
 services:
-  fortnite-app:
+  web-page:
     build:
       context: .
       dockerfile: Dockerfile
