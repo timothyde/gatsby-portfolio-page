@@ -9,6 +9,7 @@
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
@@ -30,7 +31,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gatsby-plugin-sass": "^1.0.26",
     "prettier": "^1.12.0"
   },
   "repository": {
