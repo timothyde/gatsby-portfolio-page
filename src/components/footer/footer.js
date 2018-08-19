@@ -42,7 +42,7 @@ const FooterLink = styled.a`
   transition: all 300ms ease-in-out;
 
   &:hover {
-    color: #fff1b8;
+    color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
   }
 `
@@ -57,7 +57,7 @@ const GatsbyFooterLink = styled(Link)`
   transition: all 300ms ease-in-out;
 
   &:hover {
-    color: #fff1b8;
+    color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
   }
 `

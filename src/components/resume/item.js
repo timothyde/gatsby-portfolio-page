@@ -8,7 +8,10 @@ const Item = styled.div`
   width: 100%;
 `
 
-const Timespan = styled.div`
+const Timespan = styled.h3`
+  font-weight: 300;
+  margin-right: 8px;
+  text-align: right;
   width: 40%;
 `
 
@@ -27,7 +30,7 @@ const URL = styled.a`
   transition: color 300ms ease-in-out;
 
   &:hover {
-    color: #ffe7ba;
+    color: rgba(255, 255, 255, 0.6);
   }
 `
 
@@ -60,7 +63,8 @@ const JobContainer = styled.div`
 
   &:hover {
     ${props => (props.hasDescription ? 'cursor: pointer;' : '')} h3 {
-      ${props => (props.hasDescription ? 'color: #ffe7ba;' : '')};
+      ${props =>
+        props.hasDescription ? 'color: rgba(255, 255, 255, 0.6);' : ''};
     }
   }
 `

@@ -1,8 +1,8 @@
 import React from 'react'
 import Media from 'react-media'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
-import Button from './buttons/button'
 import { ScrollContainer, ScrollDown } from './scroll'
 import signature from '../static/signature.svg'
 import LinkedIn from './social/linkedin'
@@ -27,10 +27,14 @@ const Sidebar = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 24px;
-    padding-bottom: 60px;
+    padding-bottom: 32px;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 88vh;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 12px;
   }
 
   @supports (-webkit-overflow-scrolling: touch) {
@@ -58,7 +62,7 @@ const SidebarContent = styled.div`
     margin-left: 0px;
     margin-bottom: 24px;
     width: 100%;
-    h2 {
+    h1 {
       font-size: 24px;
       line-height: 28px;
     }
@@ -95,12 +99,41 @@ const SocialContainer = styled.div`
   margin: 16px 0;
 `
 
+const Navigation = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const NavigationLink = styled(Link)`
+  color: #fa8c16;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.active {
+    border-bottom: 2px solid #fa8c16;
+  }
+`
+
+const NavigationAnchor = styled.a`
+  color: #fa8c16;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+`
+
 export default () => {
   return (
     <Sidebar>
       <SidebarContent>
         <Signature>
-          <img src={signature} />
+          <Link to="/">
+            <img src={signature} />
+          </Link>
         </Signature>
         <h1>Tech enthusiast,</h1>
         <h1>startup affine,</h1>
@@ -128,9 +161,17 @@ export default () => {
             @Kartenhaus
           </TeaserLink>.
         </Teaser>
-        <Button href="mailto:hello@timothy.de?subject=Hey%20mate%2C%20how's%20it%20going%3F">
-          Say Hello!
-        </Button>
+        <Navigation>
+          <NavigationLink exact to="/" activeClassName="active">
+            Home
+          </NavigationLink>
+          <NavigationLink to="/vita" activeClassName="active">
+            Vita
+          </NavigationLink>
+          <NavigationAnchor href="mailto:hello@timothy.de?subject=Hey%20mate%2C%20how's%20it%20going%3F">
+            Say hello
+          </NavigationAnchor>
+        </Navigation>
         <Media query="(max-width: 768px)">
           {matches =>
             matches && (

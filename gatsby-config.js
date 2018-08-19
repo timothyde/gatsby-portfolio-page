@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Timothy.de',
+    title: 'timothy.de | Personal Webpage of Timothy Krechel',
+    description:
+      'This is the personal Webpage of Timothy Krechel, a startup affine tech enthusiast.',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -12,15 +14,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
-        path: `${__dirname}/src/static/`
-      }
-    }
+        path: `${__dirname}/src/static/`,
+      },
+    },
   ],
 }
