@@ -41,7 +41,7 @@ export default () => (
       institution="Vodafone Global Enterprise"
       title="Graduate"
       timespan="01/2016 - 03/2016"
-      description="In order of completing my Bachelor thesis, I assessed VGE‘s competitive strategy approach regarding as M2M, Cloud & Hosting and Core opportunities before a theoretical background and discussed key drivers for a successful implementation."
+      description="In order of completing my Bachelor thesis, I assessed VGE‘s competitive strategy approach regarding M2M, Cloud & Hosting and Core opportunities before a theoretical background and discussed key drivers for a successful implementation."
       url="https://www.enterprise.vodafone.com"
       urlName="enterprise.vodafone.com"
     />

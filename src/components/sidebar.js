@@ -138,7 +138,7 @@ export default () => {
         <h1>Tech enthusiast,</h1>
         <h1>startup affine,</h1>
         <h1>great at googling</h1>
-        <h6>(oh and I like fancy colors and video games)</h6>
+        <h6>(oh and I love music and video games)</h6>
         <SocialContainer>
           <LinkedIn
             color="#0077b5"
