@@ -152,14 +152,13 @@ export default () => {
           <Vimeo color="#69b4e5" href="https://vimeo.com/user32649705" />
         </SocialContainer>
         <Teaser>
-          I am a Student seeking my Master's Degree{' '}
-          <TeaserLink target="_blank" href="https://www.h-brs.de/de">
-            @BRSU
-          </TeaserLink>{' '}
-          and currently working as a Fullstack Developer{' '}
-          <TeaserLink target="_blank" href="http://kartenhaus.io">
+          Hi there! I am Timothy, currently working as a Fullstack Developer{' '}
+          <TeaserLink target="_blank" href="https://kartenhaus.io">
             @Kartenhaus
-          </TeaserLink>.
+          </TeaserLink>. Have a fun project to collab on? Awesome,{' '}
+          <TeaserLink target="_blank" href="mailto:misc@timothy.de">
+            Hit me up
+          </TeaserLink>!
         </Teaser>
         <Navigation>
           <NavigationLink exact to="/" activeClassName="active">
